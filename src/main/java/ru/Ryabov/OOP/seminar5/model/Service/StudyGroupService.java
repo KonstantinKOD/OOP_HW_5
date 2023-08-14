@@ -50,4 +50,8 @@ public class StudyGroupService {
         }
         return false;
     }
+    public StudyGroup createGroup(Teacher teacher, List<Student> listStudent){
+        studentGroup = new StudyGroup(teacher, listStudent);
+        return studentGroup;
+    }
 }
