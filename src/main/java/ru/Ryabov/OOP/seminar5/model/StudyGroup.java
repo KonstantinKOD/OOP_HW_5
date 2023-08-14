@@ -7,7 +7,7 @@ import java.util.List;
 public class StudyGroup implements Iterable<Student>  {
     private List<Student> studList;
 
-    Teacher teacher;
+    private Teacher teacher;
 
 
     public StudyGroup(){
@@ -20,6 +20,16 @@ public class StudyGroup implements Iterable<Student>  {
     public List<Student> getStudList() {
         return studList;
     }
+
+    public Teacher getTeacher(){
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher){
+        this.teacher = teacher;
+    }
+
+    
 
     public void setStudList(List<Student> studList) {
         this.studList = studList;
