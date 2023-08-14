@@ -13,8 +13,9 @@ public class StudyGroup implements Iterable<Student>  {
     public StudyGroup(){
         studList = new ArrayList<>();
     }
-    public StudyGroup(List<Student> studList){
+    public StudyGroup(List<Student> studList, Teacher teacher){
         setStudList(studList);
+        this.teacher = teacher;
     }
 
     public List<Student> getStudList() {
